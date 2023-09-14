@@ -1,0 +1,112 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style main content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.berita {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.berita h2 {
+    font-size: 18px;
+}
+
+.berita p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.berita a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Sidebar (kategori berita) */
+aside.kategori {
+    float: right;
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+aside.kategori h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.kanan{
+    width: 30%;
+    float: left;
+    margin: auto;
+    background: #fff;
+    height: 420px;
+}
+
+.jarak{
+    padding:0 2pc;
+}
+
+.undecor{
+    text-decoration: none;
+}
+
+aside.kategori ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside.kategori li {
+    margin-bottom: 10px;
+}
+
+aside.kategori a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
