@@ -46,7 +46,7 @@
 
             window.location.href = "succes.html";
 
-            return false; // Prevent form submission (untuk memastikan pengalihan halaman terjadi)
+            return false; 
         }
 
         function suggestEmail() {
@@ -54,13 +54,10 @@
             var emailSuggestions = document.getElementById('emailSuggestions');
             var typedEmail = emailInput.value;
 
-            // List of suggested email domains
             var suggestions = ["@gmail.com", "@yahoo.com", "@hotmail.com"];
 
-            // Clear previous suggestions
             emailSuggestions.innerHTML = "";
 
-            // Display suggestions based on user input
             suggestions.forEach(function(suggestion) {
                 var suggestedEmail = typedEmail + suggestion;
                 var suggestionElement = document.createElement('div');
@@ -73,13 +70,11 @@
             });
         }
 
-        // Show email suggestions when email field gets focus
         var emailInput = document.getElementById('email');
         emailInput.addEventListener('focus', function() {
             suggestEmail();
         });
 
-        // Close email suggestions when focus leaves the email field
         emailInput.addEventListener('blur', function() {
             var emailSuggestions = document.getElementById('emailSuggestions');
             emailSuggestions.innerHTML = "";

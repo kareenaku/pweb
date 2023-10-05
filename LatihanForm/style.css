@@ -1,8 +1,8 @@
 
 body {
     background-image: url('https://itkoding.com/wp-content/uploads/2023/07/background-hitam-aesthetic.jpg'); /* Gambar latar belakang */
-    background-size: cover; /* Agar gambar mengisi seluruh latar belakang */
-    background-repeat: no-repeat; /* Jangan ulang gambar */
+    background-size: cover; 
+    background-repeat: no-repeat; 
     font-family: Arial, sans-serif;
 }
 
@@ -12,9 +12,9 @@ body {
 }
 
 .container {
-    background-color: black; /* Warna latar belakang kontainer */
-    border-radius: 10px; /* Tampilan sudut membulat */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    background-color: black; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     margin: 20px auto;
     max-width: 500px;
@@ -25,10 +25,10 @@ body {
 }
 
 .btn-primary {
-    background-color: #007bff; /* Warna tombol */
+    background-color: #007bff; 
     color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3; /* Warna tombol saat dihover */
+    background-color: #0056b3; 
 }
