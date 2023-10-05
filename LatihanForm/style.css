@@ -1,0 +1,34 @@
+
+body {
+    background-image: url('https://itkoding.com/wp-content/uploads/2023/07/background-hitam-aesthetic.jpg'); /* Gambar latar belakang */
+    background-size: cover; /* Agar gambar mengisi seluruh latar belakang */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+    font-family: Arial, sans-serif;
+}
+
+.form-group label {
+    color: #ffffff; 
+    text-shadow: 0 0 10px blue; 
+}
+
+.container {
+    background-color: black; /* Warna latar belakang kontainer */
+    border-radius: 10px; /* Tampilan sudut membulat */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Warna tombol */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Warna tombol saat dihover */
+}
