@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Pernikahan</title>
+    <style>
+        /* Gaya CSS untuk kontainer utama */
+        #countdown-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Membuat kontainer mengisi seluruh tinggi layar */
+        }
+
+        /* Gaya CSS untuk kotak berwarna pink */
+        .countdown-box {
+            background-color: pink;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            margin: 0 5px;
+        }
+
+        /* Gaya CSS untuk teks countdown */
+        .countdown-box span {
+            color: #fff;
+            font-size: 24px;
+        }
+        body{
+            background-color: violet;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <p>29 Februari 2024</p>
+    <div id="countdown-container">
+        <div class="countdown-box">
+            <span id="days">00</span> Hari
+        </div>
+        <div class="countdown-box">
+            <span id="hours">00</span> Jam
+        </div>
+        <div class="countdown-box">
+            <span id="minutes">00</span> Menit
+        </div>
+        <div class="countdown-box">
+            <span id="seconds">00</span> Detik
+        </div>
+    </div>
+
+    <script>
+        // Tanggal target (29 Februari 2024)
+        var targetDate = new Date('2024-02-29T00:00:00').getTime();
+
+        // Memperbarui countdown setiap 1 detik
+        var countdownInterval = setInterval(function() {
+            var currentDate = new Date().getTime();
+            var timeRemaining = targetDate - currentDate;
+
+            // Hitung hari, jam, menit, dan detik
+            var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            // Tampilkan hasil countdown di elemen HTML yang sesuai
+            document.getElementById('days').innerHTML = formatTime(days);
+            document.getElementById('hours').innerHTML = formatTime(hours);
+            document.getElementById('minutes').innerHTML = formatTime(minutes);
+            document.getElementById('seconds').innerHTML = formatTime(seconds);
+
+            // Hentikan countdown jika waktu target sudah tercapai
+            if (timeRemaining <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown-container').innerHTML = '<h2>Selamat Pernikahan!</h2>';
+            }
+        }, 1000);
+
+        // Fungsi untuk mengatur format waktu menjadi dua digit (misalnya: 09)
+        function formatTime(time) {
+            return time < 10 ? '0' + time : time;
+        }
+    </script>
+</body>
+</html>

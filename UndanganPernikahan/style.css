@@ -1,0 +1,105 @@
+body, h1, p, button, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-image: url('https://c.pxhere.com/images/f4/7f/6421be6f6ed675d37a6f8855f301-1444063.jpg!d');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8); /* Ubah nilai '0.8' untuk mengatur tingkat transparansi */
+}
+
+
+
+/* header {
+    color: #fff;
+    padding: 20px 0;
+    text-shadow: 0 0 10px blue; 
+    margin-top: 20px;
+    font-size: 40px;
+} */
+
+.content h2 {
+    color: #fff;
+    text-shadow: 0 0 10px blue; 
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.couple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; 
+}
+
+
+.profile img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #ff5733; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Gaya untuk pesan kesalahan */
+.error-message {
+    color: #ff5733;
+    font-style: italic;
+}
+
+
+
+footer {
+    background-color: #333; /* Warna latar belakang */
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+    font-size: 16px; 
+    position: absolute; 
+    width: 100%; 
+    height: 20px;
+    bottom: 0; 
+}
+
+footer:hover {
+    background-color: #444; 
+}

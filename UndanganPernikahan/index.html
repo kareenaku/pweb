@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <!-- <header>
+        <h1>Undangan Pernikahan</h1>
+    </header> -->
+    
+    <main>
+        <div class="content">
+            <div class="couple">
+                <div class="profile">
+                    <img src="asset/mem1.jpg" alt="gweh">
+                </div>
+                <div class="profile">
+                    <img src="asset/mem2.jpg" alt="Kurumaid">
+                    
+                </div>
+            </div>
+            <h2>Gweh & Ayank</h2>
+
+            <p>Kepada: <span id="kepada">YDDA</span></p>
+            
+            <button onclick="bukaUndangan()">Buka Undangan</button>
+            
+            <p class="error-message">Mohon maaf atas kesalahan penulisan nama/gelar.</p>
+        </div>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2023 Jangan Iri Dengki.</p>
+    </footer> -->
+
+    <script>
+        function bukaUndangan() {
+            window.location.href = "undang.html";
+        }
+    </script>
+</body>
+</html>
